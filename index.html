@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Quiz System</title>
+    </head>
+    <body>
+
+        <section  class="w-50 mx-auto my-5 changeWidth" id="settings">
+            <h1 class="py-5 text-center bg-secondary text-white">Setting Your Quiz</h1>
+            <div class="settings-content p-3">
+                <label for="category" class="font-weight-bold">Category</label>
+                <select class="form-control mb-3" name="category" id="category">
+                    <option value="9">General Knowledge</option>
+                    <!-- <option value="27">Animals</option> -->
+                    <option value="23">History</option>
+                    <option value="12">Music</option>
+                    <option value="15">Video Games</option>
+                    <option value="17">Science& Nature</option>
+                    <option value="22">Geography</option>
+                </select>
+
+                <label for=""class="font-weight-bold">Difficulty</label><br>
+
+                <input  class="form" type="radio" value="easy" name="difficulty" id="Easy" checked>
+                <label for="Easy">Easy</label>
+                <br>
+                <input type="radio" value="medium" name="difficulty" id="Medium">
+                <label for="Medium">Medium</label>
+                <br>
+                <input type="radio" value="hard" name="difficulty" id="Hard">
+                <label class="mb-3" for="Hard">Hard</label>
+                <br>
+                <input id="numberOfQ" class="mb-1 form-control" type="number" placeholder="Number Of Questions">
+                <p class="mb-3 ml-1">Max Of Questions : 50</p>
+                <h6 id="alert1" class="text-center mb-3 text-danger d-none"></h6>
+                <button id="start" class="btn btn-primary w-100 font-weight-bold ">Start Quiz</button>
+            </div>
+        </section>
+        <!-- End Of Settings Section -->
+       
+    <section id="quiz" class="w-50 mx-auto my-5 changeWidth">
+       <div class="heaer-content overflow-auto p-3 bg-secondary">
+           <h2 class=" text-center  text-white">Quiz</h2>
+           <span id="inCorrect" class="btn btn-danger" >Incorrect</span>
+           <span id="correct" class="btn btn-success" >Correct</span>
+           <span class=" ques btn btn-warning float-right rounded-pill"><span id="currentQuestion"></span> Of <span id="totalQuestions"></span> Question</span>
+       </div>
+
+       <div class="quiz-contnet p-3">
+        <h5 class="d-inline-block">Q:</h5>
+        <h5 id="question" class="d-inline-block"></h5>
+        <div id="rowAnswers" class="mb-3">
+            <!-- <input  type="radio" value="" name="answer" id="q1">
+            <label  for="q1">Answer1</label><br> -->
+        </div>
+        <h6 id="alert2" class="text-center mb-3 text-danger d-none ">Please Choose Your Answer</h6>
+        <button id="submit" class="btn btn-primary w-100 font-weight-bold ">Submit</button>
+       </div>
+    </section>
+        <!-- End Of Quiz Section -->
+
+    <section class="w-50 mx-auto my-5 changeWidth " id="finish">
+        <h1 class="py-5 text-center bg-secondary text-white">Finish</h1>
+        <div class="finish-content p-3">
+            <h3 class="text-center">Your Score</h3>
+            <h3 id="score" class="text-center mb-3" ></h3>
+            <button id="try" class="btn btn-primary w-100 font-weight-bold">Try Again ?</button>
+        </div>
+        
+    </section>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="module" src="js/index.js"></script>
+    </body>
+</html>

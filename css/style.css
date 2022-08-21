@@ -1,0 +1,40 @@
+body
+{
+    background-color: #0093E9;
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);   
+}
+section
+{
+    background-color: #fff;
+}
+
+#quiz , #finish , #inCorrect , #correct
+{
+    display: none;
+}
+
+#quiz .ques
+{
+    cursor: auto;
+}
+
+
+
+
+@media all and (max-width:992px)
+{
+    .changeWidth
+    {
+        width: 75%!important;
+    }
+}
+
+@media all and (max-width:768px)
+{
+    .changeWidth
+    {
+        width: 90%!important;
+    }
+}
+
+
